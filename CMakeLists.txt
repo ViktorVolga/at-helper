@@ -15,4 +15,6 @@ add_executable(
     ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
 )
 
+target_include_directories(at-helper PUBLIC ${CMAKE_SOURCE_DIR}/include)
+
 install(TARGETS at-helper RUNTIME DESTINATION bin)
