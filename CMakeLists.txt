@@ -17,4 +17,6 @@ add_executable(
 
 target_include_directories(at-helper PUBLIC ${CMAKE_SOURCE_DIR}/include)
 
+target_link_libraries(at-helper io)
+
 install(TARGETS at-helper RUNTIME DESTINATION bin)
